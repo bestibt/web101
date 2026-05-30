@@ -1,0 +1,82 @@
+{
+  "matches": [
+    {
+      "id": "m1",
+      "league": "English Premier League",
+      "home": "Arsenal",
+      "away": "Chelsea",
+      "homeCrest": "https://r2.thesportsdb.com/images/media/team/badge/uyhbfe1612467038.png",
+      "awayCrest": "https://r2.thesportsdb.com/images/media/team/badge/yvwvtu1448813215.png",
+      "homeScore": 2,
+      "awayScore": 1,
+      "status": "live",
+      "minute": "67'",
+      "kickoff": "2026-05-30T15:00:00Z"
+    },
+    {
+      "id": "m2",
+      "league": "English Premier League",
+      "home": "Liverpool",
+      "away": "Manchester City",
+      "homeCrest": "https://r2.thesportsdb.com/images/media/team/badge/uvxuqq1448813372.png",
+      "awayCrest": "https://r2.thesportsdb.com/images/media/team/badge/vwpvry1467462654.png",
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "live",
+      "minute": "HT",
+      "kickoff": "2026-05-30T15:00:00Z"
+    },
+    {
+      "id": "m3",
+      "league": "Spanish La Liga",
+      "home": "Real Madrid",
+      "away": "Barcelona",
+      "homeCrest": "https://r2.thesportsdb.com/images/media/team/badge/vwvwrw1473502969.png",
+      "awayCrest": "https://r2.thesportsdb.com/images/media/team/badge/xqwpup1448823420.png",
+      "homeScore": 3,
+      "awayScore": 2,
+      "status": "finished",
+      "minute": "FT",
+      "kickoff": "2026-05-30T13:00:00Z"
+    },
+    {
+      "id": "m4",
+      "league": "Italian Serie A",
+      "home": "Juventus",
+      "away": "Inter Milan",
+      "homeCrest": "https://r2.thesportsdb.com/images/media/team/badge/uspvsy1467894633.png",
+      "awayCrest": "https://r2.thesportsdb.com/images/media/team/badge/qtuxqx1448813423.png",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "upcoming",
+      "minute": "",
+      "kickoff": "2026-05-30T19:45:00Z"
+    },
+    {
+      "id": "m5",
+      "league": "German Bundesliga",
+      "home": "Bayern Munich",
+      "away": "Borussia Dortmund",
+      "homeCrest": "https://r2.thesportsdb.com/images/media/team/badge/wrxswt1420645152.png",
+      "awayCrest": "https://r2.thesportsdb.com/images/media/team/badge/sqxyyt1448806790.png",
+      "homeScore": 2,
+      "awayScore": 3,
+      "status": "live",
+      "minute": "81'",
+      "kickoff": "2026-05-30T16:30:00Z"
+    },
+    {
+      "id": "m6",
+      "league": "French Ligue 1",
+      "home": "Paris Saint-Germain",
+      "away": "Marseille",
+      "homeCrest": "https://r2.thesportsdb.com/images/media/team/badge/qrtwtv1448806820.png",
+      "awayCrest": "https://r2.thesportsdb.com/images/media/team/badge/rrqxwv1473502343.png",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "upcoming",
+      "minute": "",
+      "kickoff": "2026-05-30T20:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LiveKick — Soccer Live Score Reporting</title>
+  <meta name="description" content="A live soccer score reporting app — real-time match cards, league filters, and auto-refresh. A front-end portfolio project." />
+  <meta property="og:title" content="LiveKick — Soccer Live Score Reporting" />
+  <meta property="og:description" content="Real-time soccer scores, league filters, and auto-refresh. Front-end portfolio project." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">⚽ LiveKick</a>
+      <nav class="nav">
+        <a href="#scores">Live Scores</a>
+        <a href="#how">How it works</a>
+        <a href="#about">About</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Front-end portfolio project</p>
+        <h1>Soccer live score reporting, in real time.</h1>
+        <p class="lede">
+          LiveKick pulls live and recent match data from a free football API and renders
+          clean, auto-refreshing score cards — built with plain HTML, CSS, and JavaScript.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#scores">View live demo</a>
+          <a class="btn btn-ghost" href="#how">How it works</a>
+        </div>
+        <ul class="badges" aria-label="Tech stack">
+          <li>HTML5</li><li>CSS3</li><li>Vanilla JS</li><li>TheSportsDB API</li><li>Responsive</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Live scores board -->
+    <section id="scores" class="board">
+      <div class="container">
+        <div class="board-head">
+          <div>
+            <h2>Live &amp; Recent Scores</h2>
+            <p id="status-line" class="status-line" aria-live="polite">Loading matches…</p>
+          </div>
+          <div class="board-controls">
+            <label class="control">
+              <span>League</span>
+              <select id="league-select" aria-label="Filter by league"></select>
+            </label>
+            <label class="control control-check">
+              <input type="checkbox" id="auto-refresh" checked />
+              <span>Auto-refresh</span>
+            </label>
+            <button id="refresh-btn" class="btn btn-small" aria-label="Refresh scores now">↻ Refresh</button>
+          </div>
+        </div>
+
+        <!-- ARIA live region announces score updates to screen readers -->
+        <div id="matches" class="matches" aria-live="polite" aria-busy="true"></div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="how">
+      <div class="container">
+        <h2>How it works</h2>
+        <div class="how-grid">
+          <article>
+            <h3>1 · Data source</h3>
+            <p>Match data comes from <a href="https://www.thesportsdb.com/" target="_blank" rel="noopener">TheSportsDB</a>, a free, CORS-friendly football API. No backend or secret keys required, so the whole app runs as static files.</p>
+          </article>
+          <article>
+            <h3>2 · Normalize &amp; render</h3>
+            <p>Raw API responses are mapped to a single match shape, then rendered into score cards. The same renderer drives both live data and the bundled mock data.</p>
+          </article>
+          <article>
+            <h3>3 · Polling &amp; fallback</h3>
+            <p>Scores refresh on a timer (free tiers don't offer push). If the API is unreachable or rate-limited, the app falls back to bundled sample matches so the demo never looks broken.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container about-inner">
+        <h2>About this project</h2>
+        <p>
+          LiveKick is a portfolio piece demonstrating real-time data fetching, state handling,
+          graceful degradation, and accessible, responsive UI — all without a framework or build step.
+        </p>
+        <p class="about-links">
+          <a class="btn btn-ghost" href="#" id="github-link">GitHub</a>
+          <a class="btn btn-ghost" href="mailto:you@example.com">Contact</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Built with vanilla JS · Data by TheSportsDB · <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
